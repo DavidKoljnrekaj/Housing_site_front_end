@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWASM", "BlazorWASM\BlazorWASM.csproj", "{A0C277D2-9358-401C-8806-444B7671F608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{849C0397-AC48-4FFA-916C-0CAF206A8BDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0C277D2-9358-401C-8806-444B7671F608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C277D2-9358-401C-8806-444B7671F608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C277D2-9358-401C-8806-444B7671F608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C277D2-9358-401C-8806-444B7671F608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849C0397-AC48-4FFA-916C-0CAF206A8BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849C0397-AC48-4FFA-916C-0CAF206A8BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849C0397-AC48-4FFA-916C-0CAF206A8BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849C0397-AC48-4FFA-916C-0CAF206A8BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
