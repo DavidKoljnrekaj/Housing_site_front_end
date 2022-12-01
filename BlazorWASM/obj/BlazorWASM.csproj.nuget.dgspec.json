@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\BlazorWASM.csproj": {}
+    "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\BlazorWASM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\BlazorWASM.csproj": {
+    "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\BlazorWASM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\BlazorWASM.csproj",
+        "projectUniqueName": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\BlazorWASM.csproj",
         "projectName": "BlazorWASM",
-        "projectPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\BlazorWASM.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\obj\\",
+        "projectPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\BlazorWASM.csproj",
+        "packagesPath": "C:\\Users\\Lovre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lovre\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj"
+              "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj"
               }
             }
           }
@@ -83,17 +83,17 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj": {
+    "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\obj\\",
+        "projectPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Lovre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lovre\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

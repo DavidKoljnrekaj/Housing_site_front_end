@@ -11,7 +11,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(
     sp => 
         new HttpClient { 
-            BaseAddress = new Uri("https://localhost:")//bussines server uri
+            BaseAddress = new Uri("https://localhost:")//bussiness server uri
         }
 );
 builder.Services.AddScoped<IListingService, ListingService>();

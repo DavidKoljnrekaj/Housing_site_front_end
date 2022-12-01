@@ -12,4 +12,16 @@ public class HouseListingCreationDTO
     private double FloorArea;
     private List<ImageFile> images;
     private long price;
+
+    public HouseListingCreationDTO(Address adress, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price)
+    {
+        this.adress = adress;
+        ConstructionYear = constructionYear;
+        LastRebuilt = lastRebuilt;
+        HasInspection = hasInspection;
+        GroundArea = groundArea;
+        FloorArea = floorArea;
+        this.images = images;
+        this.price = price;
+    }
 }

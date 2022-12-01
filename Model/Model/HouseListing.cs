@@ -1,14 +1,27 @@
 ﻿namespace Model.Model;
 public class HouseListing
 {
-    private long id;
-    private Address address;
-    private int ConstructionYear;
-    private int LastRebuilt;
-    private bool HasInspection;
-    private double GroundArea;
-    private double FloorArea;
-    private List<ImageFile> images;
+    public long id { get; set; }
+    public Address address;
+    public int ConstructionYear;
+    public int LastRebuilt;
+    public bool HasInspection;
+    public double GroundArea;
+    public double FloorArea;
+    public List<ImageFile> images;
     //private date listing date;
-    private long price;
+    public long price;
+    public HouseListing(Address address, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price, long id)
+    {
+        this.address = address;
+        ConstructionYear = constructionYear;
+        LastRebuilt = lastRebuilt;
+        HasInspection = hasInspection;
+        GroundArea = groundArea;
+        FloorArea = floorArea;
+        this.images = images;
+        this.price = price;
+        this.id = id;
+    }
+    
 }

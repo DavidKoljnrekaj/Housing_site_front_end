@@ -2,6 +2,7 @@
 @using Model.Model
 @using Model.DTOs
 @using BlazorWASM.Services.ClientInterfaces
+@using System.Data
 @inject IListingService listingService
 @inject NavigationManager navMgr
 <h3 class="card-header">Add listing</h3>
@@ -171,9 +172,15 @@
 @foreach (var item in filesBase64)
 {
     <img src="data:@item.contentType;base64,@item.base64data"/>
+    <div>
+        @item.contentType
+    </div>
+    <div>daviiiid</div>
+    <div>
+        @item.base64data
+    </div>
 }
 
-<br/>
 
 <button type="submit" class="btn btn-primary" @onclick="PublishListing">Submit</button>
 
@@ -271,8 +278,8 @@
     async Task PublishListing()
     {
         //implement
-        HouseListingCreationDTO dto = new HouseListingCreationDTO();
+        HouseListingCreationDTO dto = new HouseListingCreationDTO(new Address(Street, PostNumber, City, HouseNumber), YearOfConstruction, YearOfLastRenovation, HasInspection,GroundArea,FloorArea, images, Price );
         HouseListing listing= await listingService.CreateListing(dto);
-        navMgr.NavigateTo("/ViewListing/"/*listing.getId*/);
+        navMgr.NavigateTo("/ViewListing/"+listing.id);
     }
 }
