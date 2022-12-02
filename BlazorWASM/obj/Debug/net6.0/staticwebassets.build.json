@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ot7cQ+imewT/zeZ/K1FQCVsFUvNQqZZK1TpAYFi18ss=",
+  "Hash": "/VmXyA4SmzLIfOiWuS9SKL4kG6rnx4BONyqvazLINjg=",
   "Source": "BlazorWASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -218,7 +218,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.8\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -303,7 +320,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.8\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -422,7 +439,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
@@ -507,7 +524,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -541,7 +558,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\lib\\netstandard2.1\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
@@ -558,7 +575,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
+      "OriginalItemSpec": "C:\\Users\\Lovre\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
@@ -3587,23 +3604,6 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.dll"
     },
     {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\0hyDfOxr.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\0NDt2uKQ.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -3942,6 +3942,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\7M5idwgR.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\8xP94h8Y.gz",
@@ -4522,6 +4539,23 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Core.dll"
     },
     {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\EmPpJZCY.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\EvNndMiV.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -4964,6 +4998,23 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Physical.dll"
     },
     {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\HRxwb6X0.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\I8qBocuw.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -5236,23 +5287,6 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Buffers.dll"
     },
     {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\KpzN+bse.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
-    },
-    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\KUXy3m+b.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -5457,6 +5491,23 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\N0rL5Fn4.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\n2sxNWkZ.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -5644,6 +5695,23 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.Local.dll"
     },
     {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\OX3hEJO4.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\p+1vaFEm.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -5812,23 +5880,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Debug.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\qZA71VGC.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\r1fPLLiQ.gz",
@@ -6205,6 +6256,23 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\UQDlZ+70.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\URmLdlv3.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -6222,23 +6290,6 @@
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\UtXZIE66.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\uyI+VH8q.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -6254,23 +6305,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\v8dInyL3.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\vek99Q+R.gz",
@@ -6356,23 +6390,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Reader.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\w+eCcbym.gz",
-      "SourceId": "BlazorWASM",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\wbhgjK6X.gz",
@@ -6764,6 +6781,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\z7+UXR7N.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\Z75cFdd5.gz",

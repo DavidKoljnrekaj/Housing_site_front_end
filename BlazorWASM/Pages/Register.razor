@@ -1,0 +1,30 @@
+﻿@page "/Register"
+<h3>Register</h3>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="card">
+            <h3>Please register</h3>
+            <div class="field">
+                <label>User name:</label>
+                <input type="text" />
+            </div>
+            <div class="field">
+                <label style="text-align: center">Password:</label>
+                <input type="password" />
+            </div>
+            <div class="field">
+                            <label>Email:</label>
+                            <input type="text"/>
+                        </div>
+            
+            <div class="field">
+                <button class="loginbtn">Register</button>
+            </div>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    
+}

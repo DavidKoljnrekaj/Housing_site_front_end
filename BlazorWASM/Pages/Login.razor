@@ -1,0 +1,64 @@
+﻿@page "/Login"
+@inject NavigationManager navMgr
+@inject IAuthService authService
+@using BlazorWASM.Services.ClientInterfaces
+
+<link href="Login.razor.css" rel="stylesheet" type="text/css" />
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="card">
+            <h3>Please login</h3>
+            <div class="field">
+                <label>User name:</label>
+                <input type="text" @bind="userName"/>
+            </div>
+            <div class="field">
+                <label style="text-align: center">Password: </label>
+                <input type="password" @bind="password"/>
+            </div>
+            
+            @if (!string.IsNullOrEmpty(errorLabel))
+            {
+                <div class="field">
+                    <label style="color: red">
+                        @errorLabel
+                    </label>
+                </div>
+            }
+           
+            <div class="field">
+                <button class="loginbtn" @onclick="LoginAsync" >Log in</button>
+            </div>
+            <div class="field">
+                <button class="loginbtn" @onclick="Register">Sign up</button>
+            </div>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string userName;
+    private string password;
+    private string errorLabel;
+
+    private async Task LoginAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            await authService.LoginAsync(userName, password);
+            navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+    
+    private void Register()
+    {
+        navMgr.NavigateTo("/Register");
+    }
+}

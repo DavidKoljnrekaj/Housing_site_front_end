@@ -20,10 +20,27 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-                    <NavLink class="nav-link" href="Map" Match="NavLinkMatch.All">
-                        Nearby listings
-                    </NavLink>
-                    </div>
+            <NavLink class="nav-link" href="Map" Match="NavLinkMatch.All">
+                Nearby listings
+            </NavLink>
+        </div>
+
+        <AuthorizeView>
+            <Authorized>
+                <div class="nav-item px-3">
+                            <NavLink class="nav-link" href="MyAccount" Match="NavLinkMatch.All">
+                                My Account
+                            </NavLink>
+                        </div>
+            </Authorized>
+            <NotAuthorized>
+               <div class="nav-item px-3">
+                           <NavLink class="nav-link" href="Login" Match="NavLinkMatch.All">
+                               Login
+                           </NavLink>
+                       </div>
+            </NotAuthorized>
+        </AuthorizeView>
     </nav>
 </div>
 
@@ -36,5 +53,6 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 
 }
