@@ -1,0 +1,70 @@
+﻿@page "/ViewListings"
+@using Model.Model
+@using BlazorWASM.Services.ClientInterfaces
+@inject IListingService listingService;
+@inject NavigationManager navMgr
+<h3>ViewListings</h3>
+
+<header class="py-5" style="background-color: #EE893A;">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">All house listings</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">:)</p>
+                </div>
+            </div>
+        </header>
+
+@if (listings == null)
+{
+}
+else if (!listings.Any())
+{
+    <p>No listings that match your criteria</p>
+}
+else
+{
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+
+                @foreach (ShortHouseListing shortHouseListing in listings)
+                {
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..."/>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h5 class="fw-bolder">@shortHouseListing.address</h5>
+                                    @shortHouseListing.price
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <button class="btn btn-outline-dark mt-auto" @onclick="@(() => navMgr.NavigateTo($"/ViewListing/{@shortHouseListing.Id}"))">View Listing</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+
+
+@code {
+    private int priceFilter;
+    private int minAreaFilter;
+    private int postcodeFilter;
+    
+    private IEnumerable<ShortHouseListing>? listings;
+
+    protected override async Task OnInitializedAsync()
+    {
+        listings = await listingService.getAsync(null, null, null);
+    }
+
+}
+}

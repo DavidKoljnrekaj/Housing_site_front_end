@@ -21,4 +21,16 @@
       <Folder Include="Pages\UIComponents" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Cities\Aalborg.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Cities\Aarhus.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Cities\Copenhagen.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Cities\Horsens.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Cities\Kolding.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Filters\ApartmentsForRent.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Filters\ApartmentsForSale.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Filters\HousesForRent.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Filters\HousesForSale.razor" />
+    </ItemGroup>
+
 </Project>

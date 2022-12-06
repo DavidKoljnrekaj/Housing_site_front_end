@@ -17,30 +17,7 @@ public class ListingService : IListingService
         this.client = client;
     }
     
-    public async Task<ICollection<HouseListing>> getAsync(string? title,string? username)
-    {
-        string query = "";
-        if (!string.IsNullOrEmpty(title))
-        {
-            query += $"?titleContains={title}";
-        }
-        else if (!string.IsNullOrEmpty(username))
-        {
-            query += $"?userName={username}";
-        }
-        HttpResponseMessage response = await client.GetAsync("/posts" + query);
-        string content = await response.Content.ReadAsStringAsync();
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception(content);
-        }
-
-        ICollection<HouseListing> posts = JsonSerializer.Deserialize<ICollection<HouseListing>>(content, new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        })!;
-        return posts;
-    }
+    
 
     public async Task<HouseListing> CreateListing(HouseListingCreationDTO dto)
     {
@@ -62,8 +39,7 @@ public class ListingService : IListingService
 
     public async Task<HouseListing> GetById(long id)
     {
-        /*
-        HttpResponseMessage response = await client.GetAsync("https://localhost:/listings/"+id);
+        HttpResponseMessage response = await client.GetAsync("https://localhost:/houselisting/"+id);
         string responseContent = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
@@ -73,13 +49,53 @@ public class ListingService : IListingService
             PropertyNameCaseInsensitive = true
         })!;
         return listing;
-*/
-        var list = new List<ImageFile>();
-        list.Add(new ImageFile { base64data = ImageFile.getRandom64(), contentType = "image/png", fileName = " file.Name" });
-        list.Add(new ImageFile { base64data = ImageFile.getRandom64(), contentType = "image/png", fileName = " file.Namee" });
-        list.Add(new ImageFile { base64data = ImageFile.getRandom64(), contentType = "image/png", fileName = " file.Nameee" });
-        return new HouseListing(new Address("Sonderbrogade", 8700, "Horsens", 31), 2014, 2015, true, 56, 204, list, 100000, 2);
+    }
+    
+    public async Task<HouseListing> addListing(HouseListingCreationDTO dto)
+    {
+        string listingAsJson = JsonSerializer.Serialize(dto);
+        StringContent content = new(listingAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PostAsync("https://localhost:7164/houselisting", content);
+        string responseContent = await response.Content.ReadAsStringAsync();
 
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(responseContent);
+        }
+        HouseListing listing = JsonSerializer.Deserialize<HouseListing>(responseContent, new JsonSerializerOptions{
+            PropertyNameCaseInsensitive = true
+        })!;
+        return listing;
+        
     }
 
+    public async Task<ICollection<ShortHouseListing>> getAsync(int? price, int? minArea, int? postcode)
+    {
+        string query = "";
+        if (!(price == null)) 
+        {
+            query += $"?maxPrice={price}";
+        }
+        else if (!(minArea == null)) 
+        {
+            query += $"?minArea={minArea}";
+        }
+        else if (!(postcode == null)) 
+        {
+            query += $"?postNumber={postcode}";
+        }
+        
+        HttpResponseMessage response = await client.GetAsync("/houselistings" + query);
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        ICollection<ShortHouseListing> listings = JsonSerializer.Deserialize<ICollection<ShortHouseListing>>(content, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return listings;
+    }
 }
