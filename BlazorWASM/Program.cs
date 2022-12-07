@@ -15,7 +15,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(
     sp => 
         new HttpClient { 
-            BaseAddress = new Uri("https://localhost:")//bussiness server uri
+            BaseAddress = new Uri("http://localhost:8888")//bussiness server uri
         }
 );
 AuthorizationPolicies.AddPolicies(builder.Services);

@@ -4,18 +4,19 @@ namespace Model.DTOs;
 
 public class HouseListingCreationDTO
 {
-    private Address adress;
-    private int ConstructionYear;
-    private int LastRebuilt;
-    private bool HasInspection;
-    private double GroundArea;
-    private double FloorArea;
-    private List<ImageFile> images;
-    private long price;
+    public Address address { get; set; }
 
-    public HouseListingCreationDTO(Address adress, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price)
+    public int ConstructionYear{ get; set; }
+    public int LastRebuilt{ get; set; }
+    public bool HasInspection{ get; set; }
+    public double GroundArea{ get; set; }
+    public double FloorArea{ get; set; }
+    public List<ImageFile> images{ get; set; }
+    public long price{ get; set; }
+
+    public HouseListingCreationDTO(Address address, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price)
     {
-        this.adress = adress;
+        this.address = address;
         ConstructionYear = constructionYear;
         LastRebuilt = lastRebuilt;
         HasInspection = hasInspection;
@@ -24,4 +25,5 @@ public class HouseListingCreationDTO
         this.images = images;
         this.price = price;
     }
+    
 }

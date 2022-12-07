@@ -2,16 +2,16 @@
 
 public class Address
 {
-    public string Street { get; set; }
-    public int PostNumber{ get; set; }
-    public string City{ get; set; }
-    public int HouseNo{ get; set; }
+    public string street { get; set; }
+    public int postnumber{ get; set; }
+    public string city{ get; set; }
+    public int houseno{ get; set; }
 
-    public Address(string street, int postNumber, string city, int houseNo)
+    public Address(string street, int postnumber, string city, int houseno)
     {
-        Street = street;
-        PostNumber = postNumber;
-        City = city;
-        HouseNo = houseNo;
+        this.street = street;
+        this.postnumber = postnumber;
+        this.city = city;
+        this.houseno = houseno;
     }
 }

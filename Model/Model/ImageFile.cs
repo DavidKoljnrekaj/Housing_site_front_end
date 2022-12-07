@@ -2,9 +2,18 @@
 
 public class ImageFile
 {
+    
+
     public string base64data { get; set; }
     public string contentType { get; set; }
     public string fileName { get; set; }
+    
+    public ImageFile(string base64data, string contentType, string fileName)
+    {
+        this.base64data = base64data;
+        this.contentType = contentType;
+        this.fileName = fileName;
+    }
     public static string getRandom645()
     {
         return

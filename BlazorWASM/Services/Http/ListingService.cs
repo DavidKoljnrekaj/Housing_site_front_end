@@ -3,6 +3,7 @@ using System.Text.Json;
 using BlazorWASM.Services.ClientInterfaces;
 using Model.DTOs;
 using Model.Model;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace BlazorWASM.Services.Http;
 
@@ -22,14 +23,18 @@ public class ListingService : IListingService
     public async Task<HouseListing> CreateListing(HouseListingCreationDTO dto)
     {
         string listingAsJson = JsonSerializer.Serialize(dto);
+        Console.WriteLine(listingAsJson);
         StringContent content = new(listingAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("https://localhost:/listings", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:8888/listing/houselisting", content);
+        
+        
         string responseContent = await response.Content.ReadAsStringAsync();
+        
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(responseContent);
         }
-
+        
         HouseListing listing = JsonSerializer.Deserialize<HouseListing>(responseContent, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
@@ -39,7 +44,7 @@ public class ListingService : IListingService
 
     public async Task<HouseListing> GetById(long id)
     {
-        HttpResponseMessage response = await client.GetAsync("https://localhost:/houselisting/"+id);
+        HttpResponseMessage response = await client.GetAsync("http://localhost:8888/listing/houselisting/"+id);
         string responseContent = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

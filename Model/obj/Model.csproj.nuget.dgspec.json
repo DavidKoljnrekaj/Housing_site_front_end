@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj": {}
+    "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj": {
+    "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Lovre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lovre\\RiderProjects\\Housing_site_front_end\\Model\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lovre\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

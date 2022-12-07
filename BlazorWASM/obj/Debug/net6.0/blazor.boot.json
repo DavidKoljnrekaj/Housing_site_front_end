@@ -30,6 +30,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-hXhFRImkOdXevYqMqYRLOzgHZWPq8ZXMXtS9J6jFTqM=",
       "Microsoft.JSInterop.dll": "sha256-WobL+r2zwB5FBTgS20yduagPN9b5O9KB59h+n2+ONDo=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-kyP+B3x4SLKMAQWP1uHn9V4Q5p3r69HPLhs8C3yxGMU=",
+      "Newtonsoft.Json.dll": "sha256-SBbEJ29XXk2FuAYzoN8urfKUlv4AvcM814Q+YTc73g4=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-Vo5Bb9oKq\/YrTGtwWhkxZbzLWoZKzjh+s6iqjyc9u4E=",
       "Microsoft.VisualBasic.Core.dll": "sha256-Cjnk9nhvTRWXb8mKeE9rfD87wFEF7Y78d3dLDbrTd58=",
@@ -197,18 +198,18 @@
       "mscorlib.dll": "sha256-TYLzIm125RbnX9+RAPqJnwZhd6CnQpJcrjiMpJfZ720=",
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
-      "Model.dll": "sha256-lrq+klMuVAtA\/h9mSXgl453ssRUTyXXgxjc4SshNZ6s=",
-      "BlazorWASM.dll": "sha256-IIFOP5CJMsdDWbOUMhG2oZFtM5LYUqQcgk1fBGZxsZM="
+      "Model.dll": "sha256-1tqzDEGFUwTtMG\/A4XPNEs0It7VX8Vkt6O4+OiVkhnc=",
+      "BlazorWASM.dll": "sha256-\/J4ecHApnZZd6NsantJZYPYaLZctQT21gGVT64JV9rc="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Model.pdb": "sha256-tqXfY3k+xu5Q58O1X4VZ0Bp3zLqX\/4LHZr+hQ1z6G3Y=",
-      "BlazorWASM.pdb": "sha256-kUsq2U9liNBKl\/n0dlzzOi0OxFymchs7gnbyNPOCRHI="
+      "Model.pdb": "sha256-3xwu3xHVpsqn4f2BpjONv4tgQUbtOXLMq1wu8dVtmqo=",
+      "BlazorWASM.pdb": "sha256-+61nXUzR1McNFEMDpg\/Wce5SXqEsqeYsX+7ZK810f+Q="
     },
     "runtime": {
-      "dotnet.6.0.8.govo6d5a6k.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
+      "dotnet.6.0.8.ow7cvgo8k6.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",
       "dotnet.timezones.blat": "sha256-2NJf++ql6UnbRRdYWEir6MxH58bYGWDEqofII\/z+Xmo=",
       "dotnet.wasm": "sha256-y0gwhQ7a6FTinj6R6HEA3SlRDb\/iL70a56PEGpKbt\/8=",
       "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE=",

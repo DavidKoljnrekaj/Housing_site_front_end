@@ -78,7 +78,7 @@
     
     <div class="row g-4 mb-4" hidden="@hideforRent">
         <div class="col-auto">
-            <input type="number" id="rent" class="form-control" @bind="Price"/>
+            <input type="number" id="rent" class="form-control" />
             <label class="form-label" for="rent">Monthly rent</label>
         </div>
         
@@ -172,13 +172,6 @@
 @foreach (var item in filesBase64)
 {
     <img src="data:@item.contentType;base64,@item.base64data"/>
-    <div>
-        @item.contentType
-    </div>
-    <div>daviiiid</div>
-    <div>
-        @item.base64data
-    </div>
 }
 
 
@@ -262,7 +255,7 @@
             {
                 await stream.ReadAsync(buf); // copy the stream to the buffer
             }
-            filesBase64.Add(new ImageFile { base64data = Convert.ToBase64String(buf), contentType = file.ContentType, fileName = file.Name });
+            filesBase64.Add(new ImageFile ( Convert.ToBase64String(buf),file.ContentType, file.Name ));
         }
     }
 
@@ -275,11 +268,13 @@
         isDisabled = false;
     }
 
-    async Task PublishListing()
+    async Task PublishListing(MouseEventArgs mouseEventArgs)
     {
-        //implement
+        
         HouseListingCreationDTO dto = new HouseListingCreationDTO(new Address(Street, PostNumber, City, HouseNumber), YearOfConstruction, YearOfLastRenovation, HasInspection,GroundArea,FloorArea, images, Price );
+        
         HouseListing listing= await listingService.CreateListing(dto);
+        
         navMgr.NavigateTo("/ViewListing/"+listing.id);
     }
 }

@@ -2,26 +2,33 @@
 public class HouseListing
 {
     public long id { get; set; }
-    public Address address;
-    public int ConstructionYear;
-    public int LastRebuilt;
-    public bool HasInspection;
-    public double GroundArea;
-    public double FloorArea;
-    public List<ImageFile> images;
+    public Address address{ get; set; }
+    public int ConstructionYear{ get; set; }
+    public int LastRebuilt{ get; set; }
+    public bool HasInspection{ get; set; }
+    public double GroundArea{ get; set; }
+    public double FloorArea{ get; set; }
+    public List<ImageFile> images{ get; set; }
     //private date listing date;
-    public long price;
-    public HouseListing(Address address, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price, long id)
+    public double price{ get; set; }
+    public string userEmail{ get; set; }
+    public HouseListing(Address address, int ConstructionYear, int LastRebuilt, bool HasInspection, double GroundArea, double FloorArea, List<ImageFile> images, double price, long id,string userEmail)
     {
         this.address = address;
-        ConstructionYear = constructionYear;
-        LastRebuilt = lastRebuilt;
-        HasInspection = hasInspection;
-        GroundArea = groundArea;
-        FloorArea = floorArea;
+        this.ConstructionYear = ConstructionYear;
+        this.LastRebuilt = LastRebuilt;
+        this.HasInspection = HasInspection;
+        this.GroundArea = GroundArea;
+        this.FloorArea = FloorArea;
         this.images = images;
         this.price = price;
         this.id = id;
+        this.userEmail = userEmail;
+    }
+
+    public HouseListing()
+    {
+        
     }
     
 }

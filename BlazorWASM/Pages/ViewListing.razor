@@ -6,15 +6,12 @@
 
 <div class="container listingcontainer">
     <div class="row ">
-        <div class="col listingphotos">
-            <img class=" w-100" src="https://wp-tid.zillowstatic.com/25/Traditional-style-suburban-home-shutterstock_398991412-823eff-1024x546.jpg" alt="Sponge Bob">
-        </div>
-        <div class="col listingphotos">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg" alt="Pepa Pig">
-        </div>
-        <div class="col listingphotos">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyamin-mellish-186077.jpg&fm=jpg" alt="Pepa Pig">
-        </div>
+        @foreach (ImageFile image in images)
+        {
+            <div class="col listingphotos">
+                <img class=" w-100" src="data:@image.contentType;base64,@image.base64data" alt="house">
+            </div>
+        }
   
     </div>
 </div>
@@ -36,7 +33,7 @@
                     </strong>
                 </td>
                 <td class="text-primary">
-                    @address.Street @address.HouseNo, @address.PostNumber @address.City
+                    @address.street @address.houseno, @address.postnumber @address.city
                 </td>
             </tr>
 
@@ -160,7 +157,7 @@
             GroundArea = listing.GroundArea;
             FloorArea = listing.FloorArea;
             images = listing.images;
-            price = listing.price;
+            price = (long)listing.price;
         }
         catch (Exception e)
         {

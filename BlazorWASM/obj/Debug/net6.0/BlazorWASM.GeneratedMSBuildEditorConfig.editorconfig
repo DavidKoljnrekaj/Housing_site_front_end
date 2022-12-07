@@ -11,61 +11,61 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorWASM
 build_property.RootNamespace = BlazorWASM
-build_property.ProjectDir = C:\Users\Lovre\RiderProjects\Housing_site_front_end\BlazorWASM\
+build_property.ProjectDir = C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lovre\RiderProjects\Housing_site_front_end\BlazorWASM
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/App.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/Index.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/Login.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/Map.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/Map.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/Odjebi.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/Odjebi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2RqZWJpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/Register.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/ViewListing.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/ViewListing.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0xpc3RpbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/ViewListings.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/ViewListings.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0xpc3RpbmdzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Shared/SurveyPrompt.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/_Imports.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Pages/AddListing.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Pages/AddListing.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTGlzdGluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-4mdxn2vclz
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Shared/MainLayout.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jk00ermrez
 
-[C:/Users/Lovre/RiderProjects/Housing_site_front_end/BlazorWASM/Shared/NavMenu.razor]
+[C:/Users/User/Desktop/SEP3/HouseSellingSystemFrontEnd/BlazorWASM/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-69rflur3ak
