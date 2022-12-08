@@ -108,6 +108,17 @@
                     @price dkk
                 </td>
             </tr>
+            <tr>
+                            <td>
+                                <strong>
+                                    <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                    Description
+                                </strong>
+                            </td>
+                            <td class="text-primary">
+                                @description 
+                            </td>
+                        </tr>
             </tbody>
         </table>
     </div>
@@ -143,7 +154,8 @@
     private List<ImageFile> images;
     //private date listing date;
     private long price;
-
+    private string description;
+    
     protected override async Task OnInitializedAsync()
     {
         msg = "";
@@ -158,6 +170,7 @@
             FloorArea = listing.FloorArea;
             images = listing.images;
             price = (long)listing.price;
+            description = listing.description;
         }
         catch (Exception e)
         {

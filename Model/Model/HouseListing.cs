@@ -11,8 +11,11 @@ public class HouseListing
     public List<ImageFile> images{ get; set; }
     //private date listing date;
     public double price{ get; set; }
+    
+    public string description{ get; set; }
     public string userEmail{ get; set; }
-    public HouseListing(Address address, int ConstructionYear, int LastRebuilt, bool HasInspection, double GroundArea, double FloorArea, List<ImageFile> images, double price, long id,string userEmail)
+    public HouseListing(Address address, int ConstructionYear, int LastRebuilt, bool HasInspection, double GroundArea, double FloorArea,
+        List<ImageFile> images, double price, long id,string userEmail, string description)
     {
         this.address = address;
         this.ConstructionYear = ConstructionYear;
@@ -24,6 +27,7 @@ public class HouseListing
         this.price = price;
         this.id = id;
         this.userEmail = userEmail;
+        this.description = description;
     }
 
     public HouseListing()

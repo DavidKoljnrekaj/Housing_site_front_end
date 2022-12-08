@@ -13,8 +13,12 @@ public class HouseListingCreationDTO
     public double FloorArea{ get; set; }
     public List<ImageFile> images{ get; set; }
     public long price{ get; set; }
-
-    public HouseListingCreationDTO(Address address, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, double floorArea, List<ImageFile> images, long price)
+    
+    public string description{ get; set; }
+    
+    public string email{ get; set; }
+    public HouseListingCreationDTO(Address address, int constructionYear, int lastRebuilt, bool hasInspection, double groundArea, 
+        double floorArea, List<ImageFile> images, long price, string description, string email)
     {
         this.address = address;
         ConstructionYear = constructionYear;
@@ -24,6 +28,8 @@ public class HouseListingCreationDTO
         FloorArea = floorArea;
         this.images = images;
         this.price = price;
+        this.description = description;
+        this.email = email;
     }
     
 }

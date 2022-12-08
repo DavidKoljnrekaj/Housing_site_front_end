@@ -14,4 +14,9 @@ public class Address
         this.city = city;
         this.houseno = houseno;
     }
+
+    public override string ToString()
+    {
+        return street+" "+houseno+", "+city+" "+postnumber;
+    }
 }

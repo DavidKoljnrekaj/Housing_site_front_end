@@ -56,7 +56,7 @@ public class ListingService : IListingService
         return listing;
     }
     
-    public async Task<HouseListing> addListing(HouseListingCreationDTO dto)
+    /*public async Task<HouseListing> addListing(HouseListingCreationDTO dto)
     {
         string listingAsJson = JsonSerializer.Serialize(dto);
         StringContent content = new(listingAsJson, Encoding.UTF8, "application/json");
@@ -72,25 +72,39 @@ public class ListingService : IListingService
         })!;
         return listing;
         
-    }
+    }*/
 
-    public async Task<ICollection<ShortHouseListing>> getAsync(int? price, int? minArea, int? postcode)
+    public async Task<ICollection<ShortHouseListing>> getAsync(int? price, int? minArea, string? city)
     {
         string query = "";
-        if (!(price == null)) 
+        if (city != null || price != 0 || minArea != 0)
         {
-            query += $"?maxPrice={price}";
+            query = "?";
         }
-        else if (!(minArea == null)) 
+
+        if (city != null) 
         {
-            query += $"?minArea={minArea}";
+            query += $"city={city}";
+            if (price != 0||minArea != 0)
+            {
+                query += $"&";
+            }
         }
-        else if (!(postcode == null)) 
+        if (price != 0) 
         {
-            query += $"?postNumber={postcode}";
+            query += $"maxPrice={price}";
+            if (minArea != 0)
+            {
+                query += $"&";
+            }
+        }
+        if (minArea != 0) 
+        {
+            query += $"minArea={minArea}";
         }
         
-        HttpResponseMessage response = await client.GetAsync("/houselistings" + query);
+        
+        HttpResponseMessage response = await client.GetAsync("/listing/houselisting" + query);
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {

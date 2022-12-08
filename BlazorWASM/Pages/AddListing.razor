@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="form-outline mb-4">
-        <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+        <textarea class="form-control" id="form6Example7" rows="4" @bind="Description"></textarea>
         <label class="form-label" for="form6Example7">Description</label>
     </div>
     
@@ -190,8 +190,8 @@
     bool hideforRent = true;
     bool hideHouse = true;
     bool hideApartment = true;
-
-
+    
+    string Description; 
     string SellingType;
     string PropertyType;
     string Street;
@@ -271,7 +271,8 @@
     async Task PublishListing(MouseEventArgs mouseEventArgs)
     {
         
-        HouseListingCreationDTO dto = new HouseListingCreationDTO(new Address(Street, PostNumber, City, HouseNumber), YearOfConstruction, YearOfLastRenovation, HasInspection,GroundArea,FloorArea, images, Price );
+        HouseListingCreationDTO dto = new HouseListingCreationDTO(new Address(Street, PostNumber, City, HouseNumber), YearOfConstruction, YearOfLastRenovation, 
+            HasInspection,GroundArea,FloorArea, images, Price, Description,"example@email.com" );
         
         HouseListing listing= await listingService.CreateListing(dto);
         

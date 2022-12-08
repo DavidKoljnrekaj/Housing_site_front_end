@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jeBLjPLynyWgsIPk4EgCHoRWMRXs6xYxY08rDdUuxqo=",
+  "Hash": "iTtB7nzRQ3Etph8GCXY2zIyepflI8maEDUHm9FqphBY=",
   "Source": "BlazorWASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -323,6 +323,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.WebUtilities.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -610,6 +627,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.8\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\lib\\netstandard2.0\\Microsoft.Net.Http.Headers.dll"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -5916,6 +5950,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\Qxj81nY3.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\r+VkXBtG.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -6919,6 +6970,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\ZstXcNAi.gz",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\obj\\Debug\\net6.0\\build-gz\\ZTPgdesG.gz",
       "SourceId": "BlazorWASM",
       "SourceType": "Computed",
@@ -7206,6 +7274,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\wwwroot\\icons\\clear_funnel.png",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icons/clear_funnel.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\clear_funnel.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\wwwroot\\icons\\funnel.png",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icons/funnel.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\funnel.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\SEP3\\HouseSellingSystemFrontEnd\\BlazorWASM\\wwwroot\\index.html",

@@ -2482,3 +2482,12 @@ C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.
 C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\obj\Debug\net6.0\build-gz\PMVbhgoe.gz
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.WebUtilities.dll.gz
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll.gz
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\obj\Debug\net6.0\build-gz\Qxj81nY3.gz
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\obj\Debug\net6.0\build-gz\ZstXcNAi.gz
+C:\Users\User\Desktop\SEP3\HouseSellingSystemFrontEnd\BlazorWASM\obj\Debug\net6.0\scopedcss\Pages\ViewListings.razor.rz.scp.css

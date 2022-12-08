@@ -1,4 +1,28 @@
 /* /Pages/AddListing.razor.rz.scp.css */
+/* /Pages/ViewListings.razor.rz.scp.css */
+.filter-bar[b-pjvfggu3ao] {
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-flex;
+    margin: 10px;
+    background-color: #0a53be;
+    color: #FFFFFF;
+}
+
+.funnel[b-pjvfggu3ao]{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.filter[b-pjvfggu3ao] {
+    display: inline-flex;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-jk00ermrez] {
     position: relative;
