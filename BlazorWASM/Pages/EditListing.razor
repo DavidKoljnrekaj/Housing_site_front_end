@@ -1,0 +1,185 @@
+﻿@page "/EditListing/{id:long}"
+@using Model.Model
+@using BlazorWASM.Services.Http
+@using BlazorWASM.Services.ClientInterfaces
+@inject IListingService listingService;
+
+<div class="container listingcontainer">
+    <div class="row ">
+        @foreach (ImageFile image in images)
+        {
+            <div class="col listingphotos">
+                <img class=" w-100" src="data:@image.contentType;base64,@image.base64data" alt="house">
+            </div>
+        }
+    </div>
+</div>
+
+
+<div class="row">&nbsp</div>
+<div class="row">
+
+    <strong>House listing information</strong><br>
+    <div class="row">&nbsp</div>
+    <div class="table-responsive">
+        <table class="table table-user-information">
+            <tbody>
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Address
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="street" @bind="@address.street" placeholder="@address.street"/>
+                    <input type="houseno" @bind="@address.houseno" placeholder="@address.houseno"/>
+                    <input type="postnumber" @bind="@address.postnumber" placeholder="@address.postnumber"/>
+                    <input type="city" @bind="@address.city" placeholder="@address.city"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Year of construction
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="constructionYear" @bind="@ConstructionYear" placeholder="@ConstructionYear"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Last rebuilt
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="lastRebuilt" @bind="@LastRebuilt" placeholder="@LastRebuilt"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Inspected
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="inspection" @bind="@HasInspection" placeholder="@HasInspection"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Ground Area
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="groundArea" @bind="@GroundArea" placeholder="@GroundArea"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Floor Area
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="floorArea" @bind="@FloorArea" placeholder="@FloorArea"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Price
+                    </strong>
+                </td>
+                <td class="text-primary">
+                    <input type="price" @bind="@price" placeholder="@price"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>
+                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                        Description
+                        </strong>
+                    </td>
+                <td class="text-primary">
+                    <input type="description" @bind="@description" placeholder="@description"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+@code {
+
+    [Parameter]
+    public long id { get; set; }
+
+    private string msg = "";
+
+    private Address address;
+    private int ConstructionYear;
+    private int LastRebuilt;
+    private bool HasInspection;
+    private double GroundArea;
+    private double FloorArea;
+    private List<ImageFile> images;
+    //private date listing date;
+    private long price;
+    private string description;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            HouseListing listing = await listingService.GetById(id);
+            address = listing.address;
+            ConstructionYear = listing.ConstructionYear;
+            LastRebuilt = listing.LastRebuilt;
+            HasInspection = listing.HasInspection;
+            GroundArea = listing.GroundArea;
+            FloorArea = listing.FloorArea;
+            images = listing.images;
+            price = (long)listing.price;
+            description = listing.description;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+}
+
+}
+
+}
