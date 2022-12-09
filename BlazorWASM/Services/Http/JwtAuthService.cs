@@ -55,14 +55,14 @@ public class JwtAuthService : IAuthService
     {
         UserLoginDto userLoginDto = new()
         {
-            Username = username,
+            email = username,
             Password = password
         };
 
         string userAsJson = JsonSerializer.Serialize(userLoginDto);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
 
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7164/auth/login", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:8888/users/login", content);
         string responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
@@ -90,7 +90,7 @@ public class JwtAuthService : IAuthService
     {
         string userAsJson = JsonSerializer.Serialize(user);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7164/auth/register", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:8888/users/createUser", content);
         string responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

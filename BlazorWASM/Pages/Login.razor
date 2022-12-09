@@ -10,14 +10,13 @@
         <div class="card">
             <h3>Please login</h3>
             <div class="field">
-                <label>User name:</label>
-                <input type="text" @bind="userName"/>
+                <label>Email :</label>
+                <input type="text" @bind="email"/>
             </div>
             <div class="field">
                 <label style="text-align: center">Password: </label>
                 <input type="password" @bind="password"/>
             </div>
-            
             @if (!string.IsNullOrEmpty(errorLabel))
             {
                 <div class="field">
@@ -26,34 +25,45 @@
                     </label>
                 </div>
             }
-           
             <div class="field">
-                <button class="loginbtn" @onclick="LoginAsync" >Log in</button>
+                <button class="loginbtn" @onclick="LoginAsync">Log in</button>
             </div>
             <div class="field">
                 <button class="loginbtn" @onclick="Register">Sign up</button>
             </div>
         </div>
     </NotAuthorized>
+    <Authorized>
+        <div class="card">
+            <h3>Hello, @context.User.Identity.Name</h3>
+        </div>
+    </Authorized>
 </AuthorizeView>
 
 @code {
-    private string userName;
+    private string email;
     private string password;
     private string errorLabel;
 
     private async Task LoginAsync()
     {
         errorLabel = "";
-        try
+        if (checkInfo())
         {
-            await authService.LoginAsync(userName, password);
-            navMgr.NavigateTo("/");
+            try
+            {
+                await authService.LoginAsync(email, password);
+                navMgr.NavigateTo("/");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                errorLabel = $"Error: {e.Message}";
+            }
         }
-        catch (Exception e)
+        else
         {
-            Console.WriteLine(e);
-            errorLabel = $"Error: {e.Message}";
+            errorLabel = "Wrong email or password";
         }
     }
     
@@ -61,4 +71,15 @@
     {
         navMgr.NavigateTo("/Register");
     }
+
+    public bool checkInfo()
+    {
+        if (!(email.Equals("") || password.Equals("") || password.Length < 5))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
 }
