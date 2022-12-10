@@ -14,38 +14,17 @@
                 <label>Name :</label>
                 <input type="text" @bind="name"/>
             </div>
-             @if (!string.IsNullOrEmpty(errorLabel))
-                        {
-                            <div class="field">
-                                <label style="color: red">
-                                    @errorLabel
-                                </label>
-                            </div>
-                        }
+             
              <div class="field">
                  <label>Surname: </label>
                  <input type="text" @bind="surname"/>
              </div>
-              @if (!string.IsNullOrEmpty(errorLabel))
-                         {
-                             <div class="field">
-                                 <label style="color: red">
-                                     @errorLabel
-                                 </label>
-                             </div>
-                         }
+             
              <div class="field">
                  <label style="text-align: center">Password:</label>
                  <input type="password" @bind="password"/>
              </div>
-              @if (!string.IsNullOrEmpty(errorLabel))
-                         {
-                             <div class="field">
-                                 <label style="color: red">
-                                     @errorLabel
-                                 </label>
-                             </div>
-                         }
+              
              <div class="field">
                  <label>Email:</label>
                  <input type="text" @bind="email"/>

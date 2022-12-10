@@ -1,6 +1,7 @@
 ﻿@page "/"
+@using BlazorWASM.Services.ClientInterfaces
 @inject NavigationManager navMgr
-
+@inject IAuthService authService
 <PageTitle>Index</PageTitle>
 
 <div class="container-fluid">
@@ -24,15 +25,21 @@
     <div class="row">&nbsp</div><div class="row">&nbsp</div><div class="row">&nbsp</div><div class="row">&nbsp</div>
   </div>
  
-  
-  
+  <AuthorizeView>
+    <Authorized>
   <div class="row text-white" style="background-color: #332A8A">
     <div class="row">&nbsp</div>
     <p style="text-align:center"> Find a buyer in no time <button class="btn bg-warning" @onclick="AddListing">Create listing</button></p>
-    
   </div>
   <div class="row">&nbsp</div><div class="row">&nbsp</div>
-  
+    </Authorized><NotAuthorized>
+  <div class="row text-white" style="background-color: #332A8A">
+      <div class="row">&nbsp</div>
+      <p style="text-align:center"> Find a buyer in no time <button class="btn bg-warning" @onclick="Login">Login</button></p>
+    </div>
+  <div class="row">&nbsp</div><div class="row">&nbsp</div>
+  </NotAuthorized>
+  </AuthorizeView>
   <div class="row"> 
     <h3 style="text-align:center"> Listing categories </h3>
     
@@ -92,8 +99,13 @@
   public string cityFilter;
     private void AddListing()
     {
-        navMgr.NavigateTo("/AddListing");
+      navMgr.NavigateTo("/AddListing");
     }
+
+  private void Login()
+  {
+    navMgr.NavigateTo("/Login");
+  }
 
   private void searchListings(string? city)
   {

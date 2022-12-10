@@ -117,4 +117,20 @@ public class ListingService : IListingService
         })!;
         return listings;
     }
+
+    public async Task UpdateListing(HouseListing updatedListing)
+    {
+        string listingAsJson = JsonSerializer.Serialize(updatedListing);
+        Console.WriteLine(listingAsJson);
+        StringContent content = new(listingAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PutAsync("http://localhost:8888/listing/houselisting", content);
+        
+        
+        string responseContent = await response.Content.ReadAsStringAsync();
+        
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(responseContent);
+        }
+    }
 }

@@ -8,4 +8,5 @@ public interface IListingService
     Task<ICollection<ShortHouseListing>> getAsync(int? price, int? minArea, string? city);
     Task<HouseListing> CreateListing(HouseListingCreationDTO dto);
     Task<HouseListing> GetById(long id);
+    Task UpdateListing(HouseListing listing);
 }

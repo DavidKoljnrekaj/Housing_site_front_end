@@ -1,4 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using BlazorWASM.Services.ClientInterfaces
+@inject IAuthService authService
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">House Selling WebApp</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -34,6 +36,9 @@
                     <NavLink class="nav-link" href="MyAccount" Match="NavLinkMatch.All">
                         My Listings
                     </NavLink>
+                    <NavLink class="nav-link" @onclick="Logout" Match="NavLinkMatch.All">
+                                            Logout
+                        </NavLink>
                 </div>
             </Authorized>
             <NotAuthorized>
@@ -57,5 +62,8 @@
         collapseNavMenu = !collapseNavMenu;
     }
 
-
+    private void Logout()
+    {
+        authService.LogoutAsync();
+    }
 }
