@@ -307,4 +307,95 @@
         
         navMgr.NavigateTo("/ViewListing/"+listing.id);
     }
+    public bool checkInfo()
+    {
+        if (!(Street.Equals("")) && isString(Street))
+        {
+            
+        }
+        else
+        {
+            errorLabel = "Street invalid";
+            return false;
+        }
+        
+        if (!(PostNumber==0))
+        {
+        }
+        else
+        {
+            errorLabel = "Post number invalid";
+            return false;
+        }
+        
+        if (!(City.Equals("")) && isString(City))
+        {
+        }
+        else
+        {
+            errorLabel = "City invalid";
+            return false;
+        }
+        
+        if (!(HouseNumber==0))
+        {
+        }
+        else
+        {
+            errorLabel = "House number invalid";
+            return false;
+        }
+        
+        if (!(YearOfConstruction<0))
+        {
+        }
+        else
+        {
+            errorLabel = "Year of construction needs to be higher than 0";
+            return false;
+        }
+        
+        if (YearOfLastRenovation>YearOfConstruction || YearOfConstruction==YearOfLastRenovation)
+        {
+        }
+        else
+        {
+            errorLabel = "Year of last renovation needs to be higher than year of construction";
+            return false;
+        }
+        
+        if (GroundArea>0)
+        {
+        }
+        else
+        {
+            errorLabel = "Ground area needs to be higher than 0";
+            return false;
+        }
+        
+        if (FloorArea>0 && FloorArea<GroundArea)
+        {
+        }
+        else
+        {
+            errorLabel = "Floor area needs to be higher than 0 and smaller than Floor area";
+            return false;
+        }
+        
+        if (Price>0)
+        {
+            return true;
+        }
+        else
+        {
+            errorLabel = "Price needs to be higher than 0";
+            return false;
+        }
+        
+    }
+
+    public bool isString(string input)
+    {
+        return input.All(Char.IsLetter);
+    }
 }
