@@ -13,14 +13,7 @@
                 <label>Email :</label>
                 <input type="text" @bind="email"/>
             </div>
-             @if (!string.IsNullOrEmpty(errorLabel))
-                        {
-                            <div class="field">
-                                <label style="color: red">
-                                    @errorLabel
-                                </label>
-                            </div>
-                        }
+             
             <div class="field">
                 <label style="text-align: center">Password: </label>
                 <input type="password" @bind="password"/>

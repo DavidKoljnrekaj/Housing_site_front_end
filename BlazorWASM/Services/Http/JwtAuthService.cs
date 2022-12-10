@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using BlazorWASM.Services.ClientInterfaces;
@@ -104,5 +105,11 @@ public class JwtAuthService : IAuthService
         ClaimsPrincipal principal = new();
         OnAuthStateChanged.Invoke(principal);
         return Task.CompletedTask;
+    }
+
+    public string GetCurrentEmail()
+    {
+        var jwtToken = new JwtSecurityToken(Jwt);
+        return jwtToken.Subject;
     }
 }

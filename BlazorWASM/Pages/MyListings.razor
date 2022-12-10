@@ -4,51 +4,23 @@
 @using Microsoft.AspNetCore.WebUtilities
 @inject IListingService listingService;
 @inject NavigationManager navMgr
+@inject IAuthService authService
 <header class="py-5" style="background-color: #EE893A;">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
             <h1 class="display-4 fw-bolder">My house listings</h1>
             <p class="lead fw-normal text-white-50 mb-0"></p>
         </div>
-    
-        <div>
-            <div class="filter-bar">
-                <div class="filters-container">
-                    <img src="icons/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
-                    @if (doShowFilters)
-                    {
-                        <div class="filter">
-                            <label>Max price:</label>
-                            <input type="number" @bind="maxPriceFilter"/>
-                        </div>
-                        <div class="filter">
-                            <label>Minimum area:</label>
-                            <input type="number" @bind="minAreaFilter"/>
-                        </div>
-                        <div class="filter">
-                            <label>City:</label>
-                            <input @bind="cityFilter" type="text" list="cities" />
-                            <datalist  id="cities">
-                                <option value="Horsens">Horsens</option>
-                                <option value="Aarhus">Aarhus</option>
-                                <option value="København">København</option>
-                                <option value="Aalborg">Aalborg</option>
-                            </datalist>
-                        </div>
-                    }
-                </div>
-            </div>
-
-            <button style="width: 100px; background-color:#0a53be;color:#FFFFFF;"  class="btn btn-outline-primary" @onclick="LoadListings">Search</button>
-        </div>
-        </div>
+    </div>
       </header>
 @if (listings == null)
 {
 }
 else if (!listings.Any())
 {
-    <p>No listings that match your criteria</p>
+    <p>You dont have any listings</p>
+    <div><p>Create a new listing: </p>
+    </div>
 }
 else
 {
@@ -86,9 +58,7 @@ else
 
 
 @code {
-    private int maxPriceFilter;
-    private int minAreaFilter;
-    private string cityFilter;
+    
     private bool doShowFilters = false;
     
     
@@ -96,30 +66,10 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        listings = await listingService.getByEmailAsync(authService.GetCurrentEmail());
+    }
+
     
-        var uri = navMgr.ToAbsoluteUri(navMgr.Uri);
-
-        if(QueryHelpers.ParseQuery(uri.Query).TryGetValue("maxPrice", out var maxPrice))
-        {
-             maxPriceFilter = Int32.Parse(maxPrice.First()); 
-        }
-
-        if(QueryHelpers.ParseQuery(uri.Query).TryGetValue("minArea", out var minArea))
-        {
-            minAreaFilter = Int32.Parse(minArea.First()); 
-        }
-        if(QueryHelpers.ParseQuery(uri.Query).TryGetValue("city", out var city))
-        {
-            cityFilter = city.First();
-        }
-
-        listings = await listingService.getAsync(maxPriceFilter,minAreaFilter,cityFilter);
-    }
-
-    private async Task LoadListings()
-    {
-        listings = await listingService.getAsync(maxPriceFilter,minAreaFilter,cityFilter);
-    }
 
 }
 }

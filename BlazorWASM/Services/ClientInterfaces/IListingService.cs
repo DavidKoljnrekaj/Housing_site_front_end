@@ -9,4 +9,5 @@ public interface IListingService
     Task<HouseListing> CreateListing(HouseListingCreationDTO dto);
     Task<HouseListing> GetById(long id);
     Task UpdateListing(HouseListing listing);
+    Task<ICollection<ShortHouseListing>> getByEmailAsync(string email);
 }

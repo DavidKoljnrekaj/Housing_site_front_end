@@ -133,4 +133,20 @@ public class ListingService : IListingService
             throw new Exception(responseContent);
         }
     }
+
+    public async Task<ICollection<ShortHouseListing>> getByEmailAsync(string email)
+    {
+        HttpResponseMessage response = await client.GetAsync("/listing/houselisting" + "?email="+email);
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        ICollection<ShortHouseListing> listings = JsonSerializer.Deserialize<ICollection<ShortHouseListing>>(content, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return listings;
+    }
 }
