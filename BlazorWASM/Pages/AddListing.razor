@@ -309,93 +309,65 @@
     }
     public bool checkInfo()
     {
-        if (!(Street.Equals("")) && isString(Street))
-        {
-            
-        }
-        else
+        if (Street.Equals("") || !isString(Street))
         {
             errorLabel = "Street invalid";
             return false;
         }
-        
-        if (!(PostNumber==0))
-        {
-        }
-        else
+        if (PostNumber==0)
         {
             errorLabel = "Post number invalid";
             return false;
         }
         
-        if (!(City.Equals("")) && isString(City))
-        {
-        }
-        else
+        if (City.Equals("") || !isString(City))
         {
             errorLabel = "City invalid";
             return false;
         }
         
-        if (!(HouseNumber==0))
-        {
-        }
-        else
+        if (HouseNumber==0)
         {
             errorLabel = "House number invalid";
             return false;
         }
         
-        if (!(YearOfConstruction<0))
-        {
-        }
-        else
+        if (YearOfConstruction<0)
         {
             errorLabel = "Year of construction needs to be higher than 0";
             return false;
         }
         
-        if (YearOfLastRenovation>YearOfConstruction || YearOfConstruction==YearOfLastRenovation)
-        {
-        }
-        else
+        if (YearOfLastRenovation<YearOfConstruction)
         {
             errorLabel = "Year of last renovation needs to be higher than year of construction";
             return false;
         }
         
-        if (GroundArea>0)
-        {
-        }
-        else
+        if (GroundArea<0)
         {
             errorLabel = "Ground area needs to be higher than 0";
             return false;
         }
         
-        if (FloorArea>0 && FloorArea<GroundArea)
-        {
-        }
-        else
+        if (FloorArea<0 || FloorArea>GroundArea)
         {
             errorLabel = "Floor area needs to be higher than 0 and smaller than Floor area";
             return false;
         }
         
-        if (Price>0)
-        {
-            return true;
-        }
-        else
+        if (Price<0)
         {
             errorLabel = "Price needs to be higher than 0";
             return false;
         }
-        
+        return true;
+
     }
 
     public bool isString(string input)
     {
         return input.All(Char.IsLetter);
     }
+    
 }

@@ -15,7 +15,7 @@ public class HouseListing
     public string description{ get; set; }
     public string userEmail{ get; set; }
     public HouseListing(Address address, int ConstructionYear, int LastRebuilt, bool HasInspection, double GroundArea, double FloorArea,
-        List<ImageFile> images, double price, long id,string userEmail, string description)
+        List<ImageFile> images, double price,string userEmail, string description,long id)
     {
         this.address = address;
         this.ConstructionYear = ConstructionYear;

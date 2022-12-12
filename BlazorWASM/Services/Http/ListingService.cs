@@ -118,7 +118,7 @@ public class ListingService : IListingService
         return listings;
     }
 
-    public async Task UpdateListing(HouseListing updatedListing)
+    public async Task<HouseListing> UpdateListing(HouseListing updatedListing)
     {
         string listingAsJson = JsonSerializer.Serialize(updatedListing);
         Console.WriteLine(listingAsJson);
@@ -132,11 +132,16 @@ public class ListingService : IListingService
         {
             throw new Exception(responseContent);
         }
+        HouseListing listing = JsonSerializer.Deserialize<HouseListing>(responseContent, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return listing;
     }
 
     public async Task<ICollection<ShortHouseListing>> getByEmailAsync(string email)
     {
-        HttpResponseMessage response = await client.GetAsync("/listing/houselisting" + "?email="+email);
+        HttpResponseMessage response = await client.GetAsync("/listing/mylistings" + "?email="+email);
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
